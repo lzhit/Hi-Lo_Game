@@ -1,0 +1,89 @@
+﻿/*
+    NAME : StyleSheet.css
+    PROJECT : PROG2001 - A6
+    PROGRAMMER : Lidiia Zhitova
+    FIRST VERSION : 2019-11-15
+    DESCRIPTION : this file contains the web site elements' style definitions
+
+*/
+
+
+body {
+    background-color: rgb(186, 174, 164);
+}
+
+h1 {
+    font-family: Courier New, Courier, monospace;
+    color: rgb(245, 238, 233);
+}
+
+span.labels {
+    display: block;
+    font-family: Courier New, Courier, monospace, bold;
+    font-size: 15px;
+    font-weight: bold;
+    color: rgb(245, 238, 233);
+}
+
+input.textBoxes {
+    outline: none;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    border-top: 0 !important;
+    border-right: 0 !important;
+    border-left: 0 !important;
+    background-color: transparent !important;
+    border-radius: 0 !important;
+    border-bottom: 1px solid rgb(245, 238, 233);
+    width:auto;
+}
+
+input.buttons {
+    border: 0 none;
+    text-align: center;
+    padding-left: 35px;
+    padding-right: 35px;
+    display: inline-block;
+    font-size: 16px;
+    font-family: Courier New, Courier, monospace;
+    margin: 0;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    height: 40px;
+    width:  150px;
+    font-weight: 700;
+}
+
+.buttonTransition {
+    background-color: #918e8e;
+    color: #575656;
+}
+
+    .buttonTransition:hover {
+        background-color: #575757;
+        color: rgb(245, 238, 233);
+    }
+
+
+
+
+.mainBlock {
+    height: 200px;
+    width: 740px;
+    position: absolute;
+    left: 67%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: right;
+}
+
+
+table, td, th {
+    text-align: center;
+}
+
+span.errorMsg {
+    font-family: Courier New, Courier, monospace, bold;
+    font-size: 14px;
+    color: red;
+}

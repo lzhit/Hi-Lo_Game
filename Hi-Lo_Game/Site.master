@@ -1,0 +1,50 @@
+﻿<%--
+    NAME            : Site.master
+    PROJECT         : PROG2001 - A6
+    PROGRAMMER      : Lidiia Zhitova
+    FIRST VERSION   : 2019-11-15
+    DESCRIPTION     : 
+--%>
+
+<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="a6_zhitova_l.Site" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Hi-Lo Game</title>
+    <link rel="stylesheet" runat="server" media="screen" href="~/StyleSheet.css" />
+    <asp:ContentPlaceHolder ID="javasFunctionPH" runat="server"></asp:ContentPlaceHolder>
+</head>
+<body>
+    <h1>Hi-Lo Game</h1>
+    <form id="form2" runat="server">
+
+        <table class="mainBlock">
+            <tr>
+                <td>
+                    <asp:ContentPlaceHolder ID="promptPH" runat="server"></asp:ContentPlaceHolder>
+
+                </td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td>
+                    <asp:ContentPlaceHolder ID="inputBoxPH" runat="server"></asp:ContentPlaceHolder>
+
+                </td>
+                <td>
+                    <asp:ContentPlaceHolder ID="inputValidationPH" runat="server"></asp:ContentPlaceHolder>
+                </td>
+            </tr>
+            <tr><td>&nbsp;</td><td>&nbsp;</td></tr>
+            <tr>
+                <td>
+                    <asp:ContentPlaceHolder ID="buttonPH" runat="server"></asp:ContentPlaceHolder>
+                </td>
+                <td>&nbsp;</td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
